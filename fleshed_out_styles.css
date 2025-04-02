@@ -23,7 +23,7 @@ nav {
 }
 
 .site-name {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* this part centers the center piece */
     flex: 1;
     max-width: 50%;
@@ -55,7 +55,7 @@ li {
 }
 
 .discord, .youtube, .merch {
-    transition: background-color .5s ease-in-out;
+    transition: background-color .15s ease-in-out;
 }
 
 .discord:hover {
@@ -89,7 +89,7 @@ h1+p {
 }
 
 .main-info {
-    height: 90vh;
+    height: 95vh;
     border: 5px solid black;
     display: flex;
     flex-direction: column;
@@ -98,6 +98,7 @@ h1+p {
     background-image: url('images/home_page_banner.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-position-y: 35%;
     position: relative;
 }
@@ -116,7 +117,7 @@ h1+p {
     text-align: center;
     width: 35%;
     margin: 0 auto;
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
 .section-title {
@@ -145,7 +146,7 @@ h1+p {
 }
 
 figure {
-    border: 5px solid black;
+    /* border: 5px solid black; */
     max-width: 20%;
 }
 
@@ -166,6 +167,7 @@ figcaption {
 
 .partner-img:hover {
     background-color: rgb(255, 165, 0, .3);
+    border-radius: 8px;
 }
 
 footer,
@@ -186,4 +188,32 @@ nav {
 
 .copyright {
     text-align: center;
+}
+
+@media (max-width: 890px) {
+    h1, p {
+        text-align: center;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    h1, p {
+        text-align: center;
+    }
+    
+    .about {
+        width: 75%;
+    }
+    .fig-caps {
+        flex-direction: column;
+        align-items: center;
+    }
+    figure {
+        max-width: 80%;
+    }
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
